@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest operator</title>
+</head>
+<body>
+    
+
+    <script>
+        const test = (name,age,...data) =>{
+            console.log(name,age)
+            for(let i=0; i<data.length; i++){
+                 console.log(data[i])
+            }
+        }
+        test('john',20,10,5,15,20,78,98,56,087)
+    </script>
+</body>
+</html>

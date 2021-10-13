@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    
+    <script>
+
+        //array destructuring------------
+        // let user=[5,'himel',24];
+        // let[id,name,age]=user;
+        // console.log(id,name,age);
+
+
+        // object destructuring-----------
+        // let user={
+        //     id:5,
+        //     name:'himel',
+        //     age:24
+        // }
+        // let {id,name,age}=user;
+        // console.log(id,name,age);
+
+
+        //nested object destructuring--------
+        // let user={
+        //     id:5,
+        //     name:'himel',
+        //     age:24,
+        //     address:{
+        //         currentAddress: 'Dhaka'
+        //     }
+        // }
+        // let{id,name,age, address: {currentAddress}}=user;
+        // console.log(id,name,age,currentAddress);
+
+
+        //nested nested object destructuring
+
+        let user={
+            id:5,
+            name:'himel',
+            age:24,
+            address:{
+                currentAddress: 'Dhaka',
+                moreAddress:{
+                   permanentAddress:'Narsingdi',
+                homeTown:"Narsingdi-3" 
+                }
+                
+            }
+        }
+        let{id,name,age, address: {currentAddress,moreAddress}}=user;
+        console.log(id,name,age,currentAddress,moreAddress);
+    </script>
+</body>
+</html>
